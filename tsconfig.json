@@ -1,0 +1,53 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		// Enable node-style module resolution, for things like npm package imports.
+		"moduleResolution": "node",
+		// Enable JSON imports.
+		"resolveJsonModule": true,
+		// Enable stricter transpilation for better output.
+		"isolatedModules": true,
+		// Astro directly run TypeScript code, no transpilation needed.
+		"noEmit": true,
+		// Report an error when importing a file using a casing different from the casing on disk.
+		"forceConsistentCasingInFileNames": true,
+		// Properly support importing CJS modules in ESM
+		"esModuleInterop": true,
+		// Skip typechecking libraries and .d.ts files
+		"skipLibCheck": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		// Type Checking
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
+		"useUnknownInCatchVariables": true,
+		"noUncheckedIndexedAccess": true,
+
+		// Emit
+		"declaration": true,
+		"declarationMap": true,
+		"importHelpers": true,
+		"inlineSources": true,
+		"newLine": "lf",
+		"noEmitHelpers": true,
+		"outDir": "dist",
+		"preserveConstEnums": true,
+		"removeComments": false,
+		"sourceMap": true,
+
+		// Language and Environment
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"lib": ["ESNext"],
+		"useDefineForClassFields": true
+	}
+}

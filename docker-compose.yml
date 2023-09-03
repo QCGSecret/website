@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  qcgsecret:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    expose:
+      - 3001
+    ports:
+      - '3001:3001'
