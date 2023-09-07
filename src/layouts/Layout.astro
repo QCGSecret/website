@@ -1,5 +1,6 @@
 ---
 import '@fontsource/inter';
+import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
 	title: string;
@@ -8,7 +9,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -16,6 +17,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<script type="text/typescript">
@@ -24,18 +26,18 @@ const { title } = Astro.props;
 			);
 		</script>
 		<slot />
+		<style is:global>
+			@tailwind utilities;
+
+			:root {
+				--accent: 124, 58, 237;
+				--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+			}
+			html {
+				font-family: 'Inter', cursive;
+				color: #f6f6f6;
+				background-color: #111313;
+			}
+		</style>
 	</body>
 </html>
-<style is:global>
-	@tailwind utilities;
-
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: 'Inter', cursive;
-		color: #f6f6f6;
-		background-color: #111313;
-	}
-</style>
