@@ -13,6 +13,7 @@ RUN corepack enable
 COPY package.json tsconfig.json pnpm-lock.yaml .npmrc astro.config.mjs tailwind.config.cjs ./
 
 COPY /src/ ./src/
+COPY /public/ ./public/
 
 RUN pnpm install --frozen-lockfile --ignore-scripts=false
 RUN pnpm run build
