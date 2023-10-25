@@ -1,4 +1,4 @@
-FROM node:20.8-alpine
+FROM node:21.1-alpine
 LABEL name "qcgsecret"
 
 WORKDIR /opt/build
