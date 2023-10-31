@@ -14,8 +14,8 @@
 		"prepare": "pnpm husky install"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.7.2",
-		"@commitlint/config-angular": "^17.7.0",
+		"@commitlint/cli": "^18.2.0",
+		"@commitlint/config-angular": "^18.1.0",
 		"@types/prettier": "2.7.3",
 		"@typescript-eslint/eslint-plugin": "^6.7.4",
 		"@typescript-eslint/parser": "^6.7.4",
