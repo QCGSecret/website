@@ -12,7 +12,6 @@
 		"neon/prettier",
 		"neon/jsx",
 		"neon/module",
-		"neon/next",
 		"neon/react",
 		"next/core-web-vitals",
 		"plugin:@typescript-eslint/recommended"
@@ -24,7 +23,7 @@
 		"project": "./tsconfig.json"
 	},
 
-	"plugins": ["@typescript-eslint", "prettier", "import", "mdx", "typescript-sort-keys", "astro"],
+	"plugins": ["@typescript-eslint", "prettier", "mdx", "typescript-sort-keys", "astro"],
 	"settings": {
 		"react": {
 			"version": "detect"
