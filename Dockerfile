@@ -10,7 +10,7 @@ ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
 
-COPY package.json tsconfig.json pnpm-lock.yaml .npmrc astro.config.mjs tailwind.config.cjs ./
+COPY package.json tsconfig.json pnpm-lock.yaml .npmrc astro.config.mjs tailwind.config.js ./
 
 COPY /src/ ./src/
 COPY /public/ ./public/
