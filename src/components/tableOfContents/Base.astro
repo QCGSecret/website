@@ -1,23 +1,17 @@
 <style is:global>
-	#toc-list-container li::before {
+	#tableofcontent li::before {
 		content: '•';
 		margin-right: 10px;
-		color: white;
-	}
-
-	#toc-list-container a {
-		margin: 0;
-		padding: 0;
-		text-decoration: none;
-		color: white;
 	}
 </style>
 
-<div class="mb-2 ml-1 toc-container border-l-1">
-	<h3>Table of contents:</h3>
-	<div id="toc-list-container">
-		<ul>
-			<slot />
-		</ul>
+<div class="mb-2 ml-1 border-l">
+	<h3 class="mb-2 ml-2">Table of contents:</h3>
+	<div class="ml-4">
+		<div id="tableofcontent">
+			<ul class="pl-0 list-none">
+				<slot />
+			</ul>
+		</div>
 	</div>
 </div>
