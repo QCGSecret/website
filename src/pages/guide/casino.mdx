@@ -1,17 +1,17 @@
 ---
-layout: '@/layouts/Guide.astro'
+layout: '../../layouts/Guide.astro'
 title: Casino Secret
 map: Casino
 category: Guide
 ---
 
-import Header from '@/components/Header.astro';
-import LaserSolver from '@/components/LaserSolver.jsx';
-import Dropdown from '@/components/Dropdown.jsx';
-import GuideAlert from '@/components/GuideAlert.jsx';
-import { Underline } from '@/components/Formatters.jsx';
-import Video from '@/components/Video.jsx';
-import Casino from '@/components/tableOfContents/Casino.astro';
+import Header from '../../components/Header.astro';
+import LaserSolver from '../../components/LaserSolver';
+import Dropdown from '../../components/Dropdown';
+import GuideAlert from '../../components/GuideAlert';
+import { Underline } from '../../components/Formatters';
+import GuideVideo from '../../components/GuideVideo.astro';
+import Casino from '../../components/tableOfContents/Casino.astro';
 
 <Casino />
 <Header title="Blockers" id="blockers">
@@ -57,7 +57,7 @@ This steps gives a **_60_** seconds time bonus when completed.
 
 <Dropdown title="Video Clip" client:only="react">
 	Here's a video of us doing it.
-	<Video link="https://u.ecorte.xyz/u/hQGPuv.mp4" width="672" client:visible />
+	<GuideVideo link="https://u.ecorte.xyz/u/hQGPuv.mp4" width="672" />
 </Dropdown>
 
 <Header title="Roulette" id="roulette">
@@ -121,7 +121,7 @@ Then activate the lasers. This will burn the box and give the hammer that can be
 
 <Dropdown title="Video Clip" client:only="react">
 	Here's a video of us doing it.
-	<Video link="http://u.ecorte.xyz/u/slce4l.mp4" width="672" client:visible />
+	<GuideVideo link="http://u.ecorte.xyz/u/slce4l.mp4" width="672" />
 </Dropdown>
 
 <Header title="Control room lasers" id="lasers">
@@ -173,7 +173,7 @@ This steps gives a 120 seconds time bonus when completed.
 
 <Dropdown title="Video Clip" client:only="react">
 	Here's a video of us doing it.
-	<Video link="http://u.ecorte.xyz/u/cm8HVe.mp4" width="672" client:visible />
+	<GuideVideo link="http://u.ecorte.xyz/u/cm8HVe.mp4" width="672" />
 </Dropdown>
 
 <Header title="Fire trial" id="firetrial">

@@ -21,7 +21,7 @@ const LaserSolver: React.FC = () => {
 			const midNumbers = String(paddedNumber2).split('');
 
 			const finalOrder = [0, 0, 0, 0];
-			for (let ii = 0; i < 4; i++) {
+			for (let ii = 0; ii < 4; ii++) {
 				// eslint-disable-next-line radix
 				const int = Number.parseInt(midNumbers[ii]!);
 				// eslint-disable-next-line radix

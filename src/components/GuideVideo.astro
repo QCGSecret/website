@@ -1,0 +1,12 @@
+---
+export interface Props {
+	link: string;
+	width: string;
+}
+
+const { link, width } = Astro.props;
+---
+
+<div>
+	<video controls preload="none" src={link} width={width}></video>
+</div>
