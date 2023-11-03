@@ -1,7 +1,7 @@
 ---
-import Layout from './Layout.astro';
-import type { Maps } from '../util/types.js';
 import type { MarkdownLayoutProps } from 'astro';
+import type { Maps } from '../util/types.js';
+import Layout from './Layout.astro';
 
 type Props = MarkdownLayoutProps<{
 	// Define frontmatter props here
@@ -15,7 +15,6 @@ const { frontmatter } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
 	</head>

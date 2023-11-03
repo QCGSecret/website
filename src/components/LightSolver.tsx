@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 // Helper function to shuffle an array and ensure it contains only numbers
 const shuffleArray = (array: number[]) => {
@@ -37,12 +38,30 @@ const NumberGame: React.FC = () => {
 		const shuffledAvailableNumbers = shuffleArray(availableNumbers);
 		const newNumbers: number[] = [];
 
-		for (let ii = 0, jj = 0; ii < numbers.length; ii++) {
-			if (selectedNumbers.includes(numbers[ii]!)) {
-				newNumbers.push(numbers[ii]!);
-			} else if (jj < shuffledAvailableNumbers.length) {
-				newNumbers.push(shuffledAvailableNumbers[jj]!);
-				jj++;
+		const nonSelectedNumbers = shuffledAvailableNumbers.slice(0, numbers.length - selectedNumbers.length);
+		const selectedNumberIndices: { [key: number]: boolean } = {};
+
+		for (const number_ of numbers) {
+			if (selectedNumbers.includes(number_)) {
+				newNumbers.push(number_);
+				selectedNumberIndices[number_] = true;
+			} else {
+				// Find the first non-selected number that hasn't been placed in a position
+				let found = false;
+				for (const nonSelectedNumber of nonSelectedNumbers) {
+					if (!selectedNumberIndices[nonSelectedNumber]) {
+						newNumbers.push(nonSelectedNumber);
+						selectedNumberIndices[nonSelectedNumber] = true;
+						found = true;
+						break;
+					}
+				}
+
+				if (!found) {
+					// In case all non-selected numbers have been placed, you can handle it as needed.
+					// For simplicity, we add a placeholder value here.
+					newNumbers.push(-1);
+				}
 			}
 		}
 
@@ -55,35 +74,35 @@ const NumberGame: React.FC = () => {
 	};
 
 	return (
-		<div className="text-white">
+		<div>
 			<div>
 				<h2>Click to Freeze Numbers:</h2>
 				{numbers.map((number) => (
-					<button
+					<Button
 						className={`${
-							selectedNumbers.includes(number) ? 'bg-green-300' : 'bg-gray-300'
-						} hover:bg-green-300 py-2 px-4 rounded-md m-1`}
+							selectedNumbers.includes(number) ? 'bg-green-600' : ''
+						} hover:bg-green-500 py-2 px-4 rounded-md m-1`}
 						key={number}
 						onClick={() => selectNumber(number)}
 						type="button"
 					>
 						{number}
-					</button>
+					</Button>
 				))}
 			</div>
 			<div>
 				<h2>Selected Numbers:</h2>
 				{selectedNumbers.map((number) => (
-					<span key={number}>{number}</span>
+					<span key={number}>{number} </span>
 				))}
 			</div>
 			<div className="mt-4">
-				<button className="bg-blue-500 text-white py-2 px-4 rounded-lg mr-2" onClick={nextRound} type="button">
+				<Button className="px-4 py-2 mr-2 text-white bg-blue-500 rounded-lg" onClick={nextRound} type="button">
 					Next Round
-				</button>
-				<button className="bg-red-500 text-white py-2 px-4 rounded-lg" onClick={resetGame} type="button">
+				</Button>
+				<Button className="px-4 py-2 text-white bg-red-500 rounded-lg" onClick={resetGame} type="button">
 					Reset Game
-				</button>
+				</Button>
 			</div>
 		</div>
 	);

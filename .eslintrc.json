@@ -56,6 +56,6 @@
 			}
 		],
 		"react/jsx-filename-extension": [1, { "extensions": [".tsx", ".astro"] }],
-		"react/jsx-indent": [true, "tab", { "extensions": [".tsx"] }]
+		"react/jsx-indent": "off"
 	}
 }

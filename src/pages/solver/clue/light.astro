@@ -1,0 +1,17 @@
+---
+import LightSolver from '@/components/LightSolver.jsx';
+import { ModeToggle } from '@/components/ModeToggle';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Clue Light Solver">
+	<div class="flex flex-col items-center justify-center h-screen">
+		<div class="flex items-center text-center">
+			<h1 class="mb-4 text-4xl font-bold">Clue Light Solver</h1>
+			<a class="ml-4">
+				<ModeToggle client:load />
+			</a>
+		</div>
+		<LightSolver client:only="react" />
+	</div>
+</Layout>

@@ -1,0 +1,10 @@
+---
+import LaserSolver from '../../../components/LaserSolver.jsx';
+import Layout from '../../../layouts/Layout.astro.jsx';
+---
+
+<Layout title="Casino Lasers Solver">
+	<div class="content-center container max-w-60ch m-auto p-1.5rem text-center">
+		<LaserSolver client:only="react" />
+	</div>
+</Layout>

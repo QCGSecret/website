@@ -1,5 +1,6 @@
 ---
 import '@fontsource/inter';
+import '@/styles/globals.css';
 import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
@@ -10,6 +11,24 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
+<script is:inline>
+const getThemePreference = () => {
+	if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+		return localStorage.getItem('theme');
+	}
+	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+const isDark = getThemePreference() === 'dark';
+document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+
+if (typeof localStorage !== 'undefined') {
+	const observer = new MutationObserver(() => {
+		const isDark = document.documentElement.classList.contains('dark');
+		localStorage.setItem('theme', isDark ? 'dark' : 'light');
+	});
+	observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+}
+</script>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -29,16 +48,8 @@ const { title } = Astro.props;
 		</script>
 		<slot />
 		<style is:global>
-			@tailwind utilities;
-
-			:root {
-				--accent: 124, 58, 237;
-				--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-			}
 			html {
 				font-family: 'Inter', cursive;
-				color: #f6f6f6;
-				background-color: #111313;
 			}
 		</style>
 	</body>

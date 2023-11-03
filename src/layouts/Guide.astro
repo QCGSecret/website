@@ -1,7 +1,8 @@
 ---
-import Layout from './Layout.astro';
-import type { Maps } from '../util/types.js';
+import { ModeToggle } from '@/components/ModeToggle';
 import type { MarkdownLayoutProps } from 'astro';
+import type { Maps } from '../util/types.js';
+import Layout from './Layout.astro';
 
 type Props = MarkdownLayoutProps<{
 	// Define frontmatter props here
@@ -15,15 +16,21 @@ const { frontmatter } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
 	</head>
-	<h1 class="layout-titles layout-big-title">{frontmatter.map} Secret Guide</h1>
+	<div class="flex items-center">
+		<h1 class="layout-titles layout-big-title">{frontmatter.map} Secret Guide</h1>
+		<a class="mr-4">
+			<ModeToggle client:load />
+		</a>
+	</div>
 	<body>
 		<p class="layout-titles">This is a guide on how to do the {frontmatter.map} secret on the Québec Games servers</p>
 		<br />
-		<slot />
+		<div class="w-40 mx-auto list-inside">
+			<slot />
+		</div>
 	</body>
 </Layout>
 

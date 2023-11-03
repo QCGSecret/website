@@ -1,30 +1,27 @@
 ---
-layout: '../../layouts/Guide.astro'
+layout: '@/layouts/Guide.astro'
 title: Casino Secret
 map: Casino
 category: Guide
 ---
 
-import Header from '../../components/Header.astro';
-import LaserSolver from '../../components/LaserSolver.jsx';
-import Dropdown from '../../components/Dropdown.jsx';
-import Step from '../../components/Step.astro';
-import Alert from '../../components/Alert.jsx';
-import { Underline } from '../../components/Formatters.jsx';
-import Video from '../../components/Video.jsx';
-import Casino from '../../components/tableOfContents/Casino.astro';
+import Header from '@/components/Header.astro';
+import LaserSolver from '@/components/LaserSolver.jsx';
+import Dropdown from '@/components/Dropdown.jsx';
+import GuideAlert from '@/components/GuideAlert.jsx';
+import { Underline } from '@/components/Formatters.jsx';
+import Video from '@/components/Video.jsx';
+import Casino from '@/components/tableOfContents/Casino.astro';
 
 <Casino />
 <Header title="Blockers" id="blockers">
 	3 players
 </Header>
 
-<Step>
-
-<Alert type="warning" title="Warning">
+<GuideAlert type="warning" title="Warning">
 	For this step, you will need to be focused, in fact it involve a very strict timing to succeed, and you must one-shot
 	it to continue the secret. If it's not the case, reset is the only option.
-</Alert>
+</GuideAlert>
 
 <Underline>**Role: Murderer & Bystander:**</Underline> <br />
 Two red buttons are found under the Security Office desk. Both members of this team will have to be prepared to push the
@@ -63,17 +60,13 @@ This steps gives a **_60_** seconds time bonus when completed.
 	<Video link="https://u.ecorte.xyz/u/hQGPuv.mp4" width="672" client:visible />
 </Dropdown>
 
-</Step>
-
 <Header title="Roulette" id="roulette">
 	2-3 players
 </Header>
 
-<Step>
-
 Firstly, you need to bring 4 coins on each roulette table. (2 directly from the map and 6 from dollars bills)
 
-{' '}
+<br />
 
 <img src="/assets/guide/casino/roulette/table.png" width="721" alt="The 2 tables." />
 
@@ -100,29 +93,25 @@ You need to do this 4 times and the table will switch numbers every time and the
 
 This steps gives a 60 seconds time bonus when completed.
 
-</Step>
-
 <Header title="Hammer" id="hammer">
 	1-2 players
 </Header>
-
-<Step>
 
 Once the revolving door is works, you'll need to get a hammer hidden inside a big box outside. In order to get it, you need to burn the box with the laser in the middle. To do so, you need to transport the box from the outside to the center. To do this, either shoot the box or right-click to move it.
 
 <img src="/assets/guide/casino/hammer/box.png" width="721" alt="The box." />
 
-<Alert type="info" title="Tips">
+<GuideAlert type="info" title="Tips">
 	Use your body as a barricade to prevent the box from launching away.
-</Alert>
+</GuideAlert>
 
 If the box is in the middle of the laser, turn it on. The box will then start to burn, and after a little while, the box will be destroyed leaving just one hammer behind. Pick it up and use it to open the Boarded door near the cashier.
 
 <img src="/assets/guide/casino/hammer/midlasers.png" width="721" alt="The lasers." />
 
-<Alert type="warning" title="Warning">
+<GuideAlert type="warning" title="Warning">
 	If you make the box exit the laser even 1 seconds, it won't break so don't touch it !
-</Alert>
+</GuideAlert>
 
 To get the hammer you need to bring the box outside to the lasers.
 
@@ -135,13 +124,9 @@ Then activate the lasers. This will burn the box and give the hammer that can be
 	<Video link="http://u.ecorte.xyz/u/slce4l.mp4" width="672" client:visible />
 </Dropdown>
 
-</Step>
-
 <Header title="Control room lasers" id="lasers">
 	3 players
 </Header>
-
-<Step>
 
 You first need to get the order of which the control room lasers and the middle lasers are shaking.
 
@@ -151,30 +136,26 @@ You first need to get the order of which the control room lasers and the middle 
 
 To do that you need to first activate the middle laser and then shoot on the power box in the control room which will make all lasers shake in an order.
 
-<Alert type="info" title="Info">
+<GuideAlert type="info" title="Info">
 	Middle lasers can be split in 2.
-</Alert>
+</GuideAlert>
 
 <img src="/assets/guide/casino/lasers/controlroombox.png" width="721" alt="The control room power box." />
 
 The code from the control room represents the order and the code from the middle lasers the code itself.<br/>
 
-<Alert type="info" title="Example">
+<GuideAlert type="info" title="Example">
 	Middle code: 1342 and control room code: 2431 the first number from the middle code is 1 and from the control room
 	code 2 so that means that the number one will be the second button the activate.
 	<br />
 	The order for the buttons would be 2143.
-</Alert>
+</GuideAlert>
 <LaserSolver client:only="react" />
 Then you need to shoot knifes, axes or props on the buttons in the control room.
-
-</Step>
 
 <Header title="Simon says" id="simon">
 	2 players
 </Header>
-
-<Step>
 
 Firstly, you need to bring back the key card from step 2.<br/>
 Then someone will go and be at the security room watching cams.<br/>
@@ -195,13 +176,9 @@ This steps gives a 120 seconds time bonus when completed.
 	<Video link="http://u.ecorte.xyz/u/cm8HVe.mp4" width="672" client:visible />
 </Dropdown>
 
-</Step>
-
 <Header title="Fire trial" id="firetrial">
 	Murderer & Gunner & 3 Bystander
 </Header>
-
-<Step>
 
 After the simon says, you the CD player inside the security room will be powered up, a red light indicates it. You must get a special disc hidden on top of some speakers in the bedroom. Take it and put it into the CD drive. The red light should transform into a green light, and the CD player will be usable.
 
@@ -281,13 +258,9 @@ Here a list of the Trial :
 
 This steps gives a 120 seconds time bonus when completed.
 
-</Step>
-
 <Header title="Hacking game" id="hackinggame">
 	2 players
 </Header>
-
-<Step>
 
 To start this step, you must at first shoot the vent in the Slot area thus making a telephone will fall from it. One of the players has to grab it and get close to the red locker and push it onto the locker. This will trigger a hack sequence: The phone attempts to connect to the computer.
 
@@ -297,27 +270,28 @@ To start this step, you must at first shoot the vent in the Slot area thus makin
 
 The other player should be in the control room at the same time. All monitors will start to turn red. The player will have to say go when the title will begin to shift.
 
-On the telephone, there will be a little red square that is synchronized with the computer. You must decide which tile is good one by synchronizing the flashing phone and computer movement.
+<br />
+On the telephone, there will be a little red square that is synchronized with the computer. You must decide which tile is
+good one by synchronizing the flashing phone and computer movement.
 
-Pay attention not to try to read the without the "Go", as it has a starting time. The sequence has a duration of about 1 seconds, you must be focused to decode it correctly.
+<br />
+Pay attention not to try to read the without the "Go", as it has a starting time. The sequence has a duration of about 1
+seconds, you must be focused to decode it correctly.
 
-<Alert type="info" title="Tips">
+<GuideAlert type="info" title="Tips">
 	Don't let the player with the phone alone, ask him a screen share.
-</Alert>
+</GuideAlert>
 
 When you think you have the correct number, the easy part is done. You will need to input it in the computeur. Same timing as before, you have to preshot one screen to input it.
 
+<br />
 <Underline>**Bonus time**</Underline> <br />
 
 This steps gives a 45 seconds time bonus when completed.
 
-</Step>
-
 <Header title="Bankrupt" id="bankrupt">
 	2 players
 </Header>
-
-<Step>
 
 To start this step, you must first take the plank outside and put it in the vent.
 
@@ -362,11 +336,7 @@ The code will be: 3472
 
 </Dropdown>
 
-</Step>
-
 <Header title="Credits" id="credits" />
-
-<Step>
 
 Terion - For being the first one to break a blocker. <br/>
 Juju - For helping find the good timing and being the first one the destroy all the blockers. <br/>
@@ -378,5 +348,3 @@ Schizophrenia - For having the idea of burning the box. <br/>
 Wolfy ♡ - For finding that lasers start to shake after you shoot the power box. <br/>
 Magic - For being the first one the finish simon says. <br/>
 Stormlux - For finding how to get the credit card. <br/>
-
-</Step>
