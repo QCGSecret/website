@@ -48,6 +48,11 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"lib": ["ESNext"],
-		"useDefineForClassFields": true
+		"useDefineForClassFields": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	}
 }
