@@ -14,7 +14,7 @@
 		"prepare": "pnpm husky install"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.4.0",
+		"@commitlint/cli": "^18.4.1",
 		"@commitlint/config-angular": "^18.4.0",
 		"@types/prettier": "2.7.3",
 		"@typescript-eslint/eslint-plugin": "^6.10.0",
@@ -49,7 +49,7 @@
 		"@react-icons/all-files": "^4.1.0",
 		"@types/react": "^18.2.37",
 		"@types/react-dom": "^18.2.15",
-		"astro": "^3.5.2",
+		"astro": "^3.5.3",
 		"astro-compress": "^2.2.3",
 		"astro-critters": "^2.0.11",
 		"class-variance-authority": "^0.7.0",
