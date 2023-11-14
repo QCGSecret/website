@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@ariakit/react": "^0.3.5",
 		"@astrojs/check": "^0.3.1",
-		"@astrojs/mdx": "^1.1.4",
+		"@astrojs/mdx": "^1.1.5",
 		"@astrojs/node": "^6.0.3",
 		"@astrojs/react": "^3.0.4",
 		"@astrojs/tailwind": "^5.0.2",
@@ -49,7 +49,7 @@
 		"@react-icons/all-files": "^4.1.0",
 		"@types/react": "^18.2.37",
 		"@types/react-dom": "^18.2.15",
-		"astro": "^3.5.3",
+		"astro": "^3.5.4",
 		"astro-compress": "^2.2.3",
 		"astro-critters": "^2.0.11",
 		"class-variance-authority": "^0.7.0",
