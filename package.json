@@ -39,7 +39,7 @@
 		"@ariakit/react": "^0.4.1",
 		"@astrojs/check": "^0.5.6",
 		"@astrojs/mdx": "^2.1.1",
-		"@astrojs/node": "^6.1.0",
+		"@astrojs/node": "^8.2.1",
 		"@astrojs/react": "^3.0.10",
 		"@astrojs/tailwind": "^5.1.0",
 		"@fontsource/inter": "^5.0.16",
