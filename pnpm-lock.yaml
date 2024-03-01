@@ -12,7 +12,7 @@ dependencies:
     specifier: ^0.3.4
     version: 0.3.4(prettier-plugin-astro@0.12.3)(prettier@3.1.1)(typescript@5.3.3)
   '@astrojs/mdx':
-    specifier: ^2.0.3
+    specifier: ^2.1.1
     version: 2.1.1(astro@4.4.6)
   '@astrojs/node':
     specifier: ^7.0.4
@@ -45,7 +45,7 @@ dependencies:
     specifier: ^18.2.18
     version: 18.2.18
   astro:
-    specifier: ^4.1.0
+    specifier: ^4.4.6
     version: 4.4.6(@types/node@20.11.24)(typescript@5.3.3)
   astro-compress:
     specifier: ^2.2.5
@@ -2713,7 +2713,7 @@ packages:
     resolution:
       { integrity: sha512-B5hZHgHsXvfCoO3xgNJvBnX7N8p86TqQeGKXcokW4XXi+qY4vxxPSFYofytvVmpFxzPv7oxDQzjg5Un5m2/xiw== }
     dependencies:
-      '@types/unist': 3.0.1
+      '@types/unist': 3.0.2
     dev: false
 
   /@types/hast@3.0.4:
@@ -2875,11 +2875,6 @@ packages:
   /@types/unist@2.0.9:
     resolution:
       { integrity: sha512-zC0iXxAv1C1ERURduJueYzkzZ2zaGyc+P2c95hgkikHPr3z8EdUZOlgEQ5X0DRmwDZn+hekycQnoeiiRVrmilQ== }
-
-  /@types/unist@3.0.1:
-    resolution:
-      { integrity: sha512-ue/hDUpPjC85m+PM9OQDMZr3LywT+CT6mPsQq8OJtCLiERkGRcQUFvu9XASF5XWqyZFXbf15lvb3JFJ4dRLWPg== }
-    dev: false
 
   /@types/unist@3.0.2:
     resolution:
@@ -3116,7 +3111,7 @@ packages:
       '@typescript-eslint/types': 6.17.0
       '@typescript-eslint/typescript-estree': 6.17.0(typescript@5.3.3)
       eslint: 8.56.0
-      semver: 7.5.4
+      semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3947,9 +3942,9 @@ packages:
     engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001559
-      electron-to-chromium: 1.4.572
-      node-releases: 2.0.13
+      caniuse-lite: 1.0.30001574
+      electron-to-chromium: 1.4.621
+      node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: false
 
@@ -4953,11 +4948,6 @@ packages:
   /ee-first@1.1.1:
     resolution:
       { integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow== }
-    dev: false
-
-  /electron-to-chromium@1.4.572:
-    resolution:
-      { integrity: sha512-RlFobl4D3ieetbnR+2EpxdzFl9h0RAJkPK3pfiwMug2nhBin2ZCsGIAJWdpNniLz43sgXam/CgipOmvTA+rUiA== }
     dev: false
 
   /electron-to-chromium@1.4.621:
@@ -9543,11 +9533,6 @@ packages:
       { integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA== }
     dev: false
     optional: true
-
-  /node-releases@2.0.13:
-    resolution:
-      { integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ== }
-    dev: false
 
   /node-releases@2.0.14:
     resolution:
