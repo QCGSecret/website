@@ -5,6 +5,7 @@ map: Casino
 category: Guide
 ---
 
+import { Image } from 'astro:assets';
 import Header from '../../components/Header.astro';
 import LaserSolver from '../../components/LaserSolver';
 import Dropdown from '../../components/Dropdown';
@@ -55,12 +56,18 @@ security room, otherwise he must remain motionless and try again.
 
 <Underline>**Role: Sheriff:**</Underline> <br />A Power box is located at the Bedroom, near the scaffolding area.
 
-<img src="/assets/guide/casino/blockers/mainpowerbox.png" width="721" alt="The main power box." />
-Once you have found it, you will need to shoot it for the step to begin. A spark will exit the power box and start to move.
-You will need to count how many time it disappear, when the Fourth-Fifth Sparks blow you will need to call your teammate
-to push the buttons to briefly disable the blockers.
+<Image
+	src="/assets/guide/casino/blockers/mainpowerbox.png"
+	width="721"
+	height="721"
+	alt="The main power box."
+	loading="eager"
+/>
+Once you have found it, you will need to shoot it for the step to begin. A spark will exit the power box and start to
+move. You will need to count how many time it disappear, when the Fourth-Fifth Sparks blow you will need to call your
+teammate to push the buttons to briefly disable the blockers.
 
-<img src="/assets/guide/casino/blockers/2buttons.png" width="721" alt="The 2 buttons." />
+<Image src="/assets/guide/casino/blockers/2buttons.png" width="721" height="721" alt="The 2 buttons." loading="lazy" />
 
 If you hear a buzzing sound that means your teammates have succeeded. When the spark is at the last emplacement from the
 breaker and disappear (7 Sparks), you must shoot the breaker to make the sparks continue to follow the cable. Repeat this
@@ -73,9 +80,21 @@ aware of that before shooting the box!
 security office to shoot the blue part of the keypad, to get a key card that can be used in the keycard reader at the
 main door.
 
-<img src="/assets/guide/casino/blockers/bluepart.png" width="721" alt="The blue part on the keypad." />
-<img src="/assets/guide/casino/blockers/card.png" width="721" alt="The card." />
-<img src="/assets/guide/casino/blockers/cardreader.png" width="721" alt="The card reader." />
+<Image
+	src="/assets/guide/casino/blockers/bluepart.png"
+	width="721"
+	height="721"
+	alt="The blue part on the keypad."
+	loading="lazy"
+/>
+<Image src="/assets/guide/casino/blockers/card.png" width="721" height="721" alt="The card." loading="lazy" />
+<Image
+	src="/assets/guide/casino/blockers/cardreader.png"
+	width="721"
+	height="721"
+	alt="The card reader."
+	loading="lazy"
+/>
 
 <Underline>**Bonus time**</Underline> <br />
 This steps gives a **_60_** seconds time bonus when completed.
@@ -93,21 +112,27 @@ Firstly, you need to bring 4 coins on each roulette table. (2 directly from the 
 
 <br />
 
-<img src="/assets/guide/casino/roulette/table.png" width="721" alt="The 2 tables." />
+<Image src="/assets/guide/casino/roulette/table.png" width="721" height="721" alt="The 2 tables." loading="lazy" />
 
 To activate the timer you need to put a coin on the number 32 of each table.<br/>
 After that you take a coin and drag over all numbers of the first table. While doing that the numbers on the second table screen will start lighting up.
 
 {' '}
 
-<img
+<Image
 	src="/assets/guide/casino/roulette/whitescreen.png"
-	width="360"
+	width="359"
+	height="238"
+	alt="The screen when there's a coin on the wrong number."
+	loading="lazy"
 	alt="The screen when there's a coin on the wrong number."
 />
-<img
+<Image
 	src="/assets/guide/casino/roulette/pinkscreen.png"
-	width="360"
+	width="359"
+	height="238"
+	alt="The screen when there's a coin on a correct number."
+	loading="lazy"
 	alt="The screen when there's a coin on a correct number."
 />
 
@@ -124,7 +149,7 @@ This steps gives a 90 seconds time bonus when completed.
 
 Once the revolving door is works, you'll need to get a hammer hidden inside a big box outside. In order to get it, you need to burn the box with the laser in the middle. To do so, you need to transport the box from the outside to the center. To do this, either shoot the box or right-click to move it.
 
-<img src="/assets/guide/casino/hammer/box.png" width="721" alt="The box." />
+<Image src="/assets/guide/casino/hammer/box.png" width="721" height="721" alt="The box." loading="lazy" />
 
 <GuideAlert type="info" title="Tips">
 	Use your body as a barricade to prevent the box from launching away.
@@ -132,7 +157,7 @@ Once the revolving door is works, you'll need to get a hammer hidden inside a bi
 
 If the box is in the middle of the laser, turn it on. The box will then start to burn, and after a little while, the box will be destroyed leaving just one hammer behind. Pick it up and use it to open the Boarded door near the cashier.
 
-<img src="/assets/guide/casino/hammer/midlasers.png" width="721" alt="The lasers." />
+<Image src="/assets/guide/casino/hammer/midlasers.png" width="721" height="721" alt="The lasers." loading="lazy" />
 
 <GuideAlert type="warning" title="Warning">
 	If you make the box exit the laser even 1 seconds, it won't break so don't touch it !
@@ -142,7 +167,13 @@ To get the hammer you need to bring the box outside to the lasers.
 
 Then activate the lasers. This will burn the box and give the hammer that can be used to open the blocked door.
 
-<img src="/assets/guide/casino/hammer/blockeddoor.png" width="721" alt="The blocked door." />
+<Image
+	src="/assets/guide/casino/hammer/blockeddoor.png"
+	width="721"
+	height="721"
+	alt="The blocked door."
+	loading="lazy"
+/>
 
 <Dropdown title="Video Clip" client:only="react">
 	Here's a video of us doing it.
@@ -155,9 +186,21 @@ Then activate the lasers. This will burn the box and give the hammer that can be
 
 You first need to get the order of which the control room lasers and the middle lasers are shaking.
 
-<img src="/assets/guide/casino/lasers/controlroomlasers.png" width="721" alt="The control lasers." />
+<Image
+	src="/assets/guide/casino/lasers/controlroomlasers.png"
+	width="721"
+	height="721"
+	alt="The control lasers."
+	loading="lazy"
+/>
 
-<img src="/assets/guide/casino/lasers/2midlasers.png" width="721" hr alt="The middle lasers." />
+<Image
+	src="/assets/guide/casino/lasers/2midlasers.png"
+	width="721"
+	height="721"
+	alt="The middle lasers."
+	loading="lazy"
+/>
 
 To do that you need to first activate the middle laser and then shoot on the power box in the control room which will make all lasers shake in an order.
 
@@ -165,7 +208,13 @@ To do that you need to first activate the middle laser and then shoot on the pow
 	Middle lasers can be split in 2.
 </GuideAlert>
 
-<img src="/assets/guide/casino/lasers/controlroombox.png" width="721" alt="The control room power box." />
+<Image
+	src="/assets/guide/casino/lasers/controlroombox.png"
+	width="721"
+	height="721"
+	alt="The control room power box."
+	loading="lazy"
+/>
 
 The code from the control room represents the order and the code from the middle lasers the code itself.<br/>
 
@@ -186,7 +235,13 @@ Firstly, you need to bring back the key card from step 2.<br/>
 Then someone will go and be at the security room watching cams.<br/>
 Then you need to slide the key card in the key card reader in the control room.<br/>
 
-<img src="/assets/guide/casino/simonsays/controlroomcardreader.png" width="721" alt="The key card reader." />
+<Image
+	src="/assets/guide/casino/simonsays/controlroomcardreader.png"
+	width="721"
+	height="721"
+	alt="The key card reader."
+	loading="lazy"
+/>
 
 Three color will appear on a screen that you are able to see from the third floor cam you will need to remember them.<br/>
 At the same time, the third floor cam will be available in security room. The button to view the third floor cam changes after every sequence of color. <br/>It will put you on a random cam and the button will be randomized again. An order will be shown on a screen.<br/>
@@ -207,76 +262,172 @@ This steps gives a 180 seconds time bonus when completed.
 
 After the simon says, you the CD player inside the security room will be powered up, a red light indicates it. You must get a special disc hidden on top of some speakers in the bedroom. Take it and put it into the CD drive. The red light should transform into a green light, and the CD player will be usable.
 
-<img src="/assets/guide/casino/firetrial/disk.png" width="721" alt="The disk." />
-<img src="/assets/guide/casino/firetrial/diskplayer.png" width="721" alt="The disk player." />
+<Image src="/assets/guide/casino/firetrial/disk.png" width="721" height="721" alt="The disk." loading="lazy" />
+<Image
+	src="/assets/guide/casino/firetrial/diskplayer.png"
+	width="721"
+	height="721"
+	alt="The disk player."
+	loading="lazy"
+/>
 
 By interacting with it, the actual camera will be replaced by the Candle room cameras. Only displaying three candles and one table. An audible signal will start, and the mini-game will start. The table will show you a trial to do in less than 10 seconds, if you do it correctly a success audio cue will play, but if not. One of the candle will lose its flame and you'll need to interact with the CD player again. If you lose all three candles, the CD player will release the disc and see sparks. Making the round impossible to advance further.
 
 Here a list of the Trial :
 
 <Dropdown title="Chimney Smoke" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/smoke.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/smoke.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 	The murderer need to Activate the smoke trap located on the top of the bedroom.
-	<img src="/assets/guide/casino/firetrial/trials/smoketrap.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/smoketrap.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Moving Hexagon" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/door.png" width="672" />
-	Depending of the rotation (clockwise or counterclockwise), a player will need to match the rotating door movement to the
-	hexagon, by putting the card in the key card reader near the door.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/door.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	Depending of the rotation (clockwise or counterclockwise), a player will need to match the rotating door movement to
+	the hexagon, by putting the card in the key card reader near the door.
 </Dropdown>
 
 <Dropdown title="Elevator Signs" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/preelevator.png" width="672" />
-	Depending of the arrow lighted up, you will need to call or go In An Elevator And go up If the arrow shows "up" or go down
-	if It show "down"
+	<Image
+		src="/assets/guide/casino/firetrial/trials/preelevator.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	Depending of the arrow lighted up, you will need to call or go In An Elevator And go up If the arrow shows "up" or go
+	down if It show "down"
 </Dropdown>
 
 <Dropdown title="The Table" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/table.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/table.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 	Depending on the items, show on the table you will have to put this item on the table located between the 2 Couches In
 	Front Of Restaurant at 2nd Floor. The items can be : A coffee cup from Control Room ; Cans ; Gold coin ; Watermelon.
 </Dropdown>
 
 <Dropdown title="The Phones" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/phone.png" width="672" />
-	If the table have a phone in it, it mean that one of the phone on the map will begin to ring, you must answer it by pressing
-	the "Action key" There are 3 phones on the map located at the Cashier, Reception and Bedroom.
-	<img src="/assets/guide/casino/firetrial/trials/phone1.png" width="672" />
-	<img src="/assets/guide/casino/firetrial/trials/phone2.png" width="672" />
-	<img src="/assets/guide/casino/firetrial/trials/phone3.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/phone.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	If the table have a phone in it, it mean that one of the phone on the map will begin to ring, you must answer it by
+	pressing the "Action key" There are 3 phones on the map located at the Cashier, Reception and Bedroom.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/phone1.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	<Image
+		src="/assets/guide/casino/firetrial/trials/phone2.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	<Image
+		src="/assets/guide/casino/firetrial/trials/phone3.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="2 Blocks Showing Lasers In Between Them" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/lasers.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/lasers.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 	Someone has to activate the lasers In Mid.
 </Dropdown>
 
 <Dropdown title="Wild West Game" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/wildwestgame.png" width="672" />
-	If some dust / Mist appear on the camera with two guns. It mean that someone with a gun has to go in the bedroom in front
-	of the target located on the wall, nothing will happen at first but then the player inside the Security room, will hear
-	a "DRAW", quickly after that draw your gun and shoot the target as quickly as possible.
-	<img src="/assets/guide/casino/firetrial/trials/target.png" width="672" />
+	<Image
+		src="/assets/guide/casino/firetrial/trials/wildwestgame.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	If some dust / Mist appear on the camera with two guns. It mean that someone with a gun has to go in the bedroom in
+	front of the target located on the wall, nothing will happen at first but then the player inside the Security room,
+	will hear a "DRAW", quickly after that draw your gun and shoot the target as quickly as possible.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/target.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Alarm / Exit Sign" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/alarm.png" width="672" />
-	If an Alarm is ringing and an exit sign appears, that means there is no time to lose, everyone needs to gather inside the
-	cam room, for that you have 11 seconds to do so, you'll need to stop being at your role. If done correctly, you will gain
-	a short Break to permit you to gain back your role.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/alarm.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	If an Alarm is ringing and an exit sign appears, that means there is no time to lose, everyone needs to gather inside
+	the cam room, for that you have 11 seconds to do so, you'll need to stop being at your role. If done correctly, you
+	will gain a short Break to permit you to gain back your role.
 </Dropdown>
 
 <Dropdown title="Fruits" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/fruits.png" width="672" />
-	The fruit displayed on the screen must be selected on the fruit machine located near the rotating door. Bear in mind the
-	machine is limited to 10 uses, and that the can must be dispensed before the timer runs out.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/fruits.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	The fruit displayed on the screen must be selected on the fruit machine located near the rotating door. Bear in mind
+	the machine is limited to 10 uses, and that the can must be dispensed before the timer runs out.
 </Dropdown>
 
 <Dropdown title="Eyes in a jar" client:only="react">
-	<img src="/assets/guide/casino/firetrial/trials/eyes.png" width="672" />
-	The camera must be switched off the game as soon as possible, and remain off until the timer ends. The player has a very
-	limited amount of time to do this.
+	<Image
+		src="/assets/guide/casino/firetrial/trials/eyes.png"
+		width="672"
+		height="672"
+		alt="The trial."
+		loading="lazy"
+	/>
+	The camera must be switched off the game as soon as possible, and remain off until the timer ends. The player has a
+	very limited amount of time to do this.
 </Dropdown>
 
 <Underline>**Bonus time**</Underline> <br />
@@ -289,15 +440,15 @@ This steps gives a 150 seconds time bonus when completed.
 
 To start this step, you must at first shoot the vent in the Slot area thus making a telephone will fall from it. One of the players has to grab it and get close to the red locker and push it onto the locker. This will trigger a hack sequence: The phone attempts to connect to the computer.
 
-<img src="/assets/guide/casino/hackinggame/vent.png" width="360" alt="The vent." />
-<img src="/assets/guide/casino/hackinggame/phone.png" width="360" alt="The phone." />
-<img src="/assets/guide/casino/hackinggame/locker.png" width="721" alt="The locker." />
+<Image src="/assets/guide/casino/hackinggame/vent.png" width="360" height="238" alt="The vent." loading="lazy" />
+<Image src="/assets/guide/casino/hackinggame/phone.png" width="360" height="238" alt="The phone." loading="lazy" />
+<Image src="/assets/guide/casino/hackinggame/locker.png" width="721" height="721" alt="The locker." loading="lazy" />
 
 The other player should be in the control room at the same time. All monitors will start to turn red. The player will have to say go when the title will begin to shift.
 
 <br />
-On the telephone, there will be a little red square that is synchronized with the computer. You must decide which tile is
-good one by synchronizing the flashing phone and computer movement.
+On the telephone, there will be a little red square that is synchronized with the computer. You must decide which tile
+is good one by synchronizing the flashing phone and computer movement.
 
 <br />
 Pay attention not to try to read the without the "Go", as it has a starting time. The sequence has a duration of about 1
@@ -320,20 +471,26 @@ This steps gives a 90 seconds time bonus when completed.
 
 To start this step, you must first take the plank outside and put it in the vent.
 
-<img src="/assets/guide/casino/bankrupt/plank.png" width="721" alt="The plank." />
-<img src="/assets/guide/casino/bankrupt/vent.png" width="721" alt="The vent." />
+<Image src="/assets/guide/casino/bankrupt/plank.png" width="721" height="721" alt="The plank." loading="lazy" />
+<Image src="/assets/guide/casino/bankrupt/vent.png" width="721" height="721" alt="The vent." loading="lazy" />
 
 But you must wait for the moment where the sound of that specific slot machine is playing to drop the plank.
 
-<img src="/assets/guide/casino/bankrupt/slot.png" width="721" alt="The slot machine." />
+<Image src="/assets/guide/casino/bankrupt/slot.png" width="721" height="721" alt="The slot machine." loading="lazy" />
 <audio src="http://u.ecorte.xyz/u/K4iU6e.mp3" controls width="721" title="The sound."></audio>
 If you do this at the right time you will get a credit card.
 
-<img src="/assets/guide/casino/bankrupt/creditcard.png" width="322" alt="The credit card." />
+<Image
+	src="/assets/guide/casino/bankrupt/creditcard.png"
+	width="322"
+	height="238"
+	alt="The credit card."
+	loading="lazy"
+/>
 
 Then put the credit card in the atm.
 
-<img src="/assets/guide/casino/bankrupt/atm.png" width="721" alt="The atm." />
+<Image src="/assets/guide/casino/bankrupt/atm.png" width="721" height="721" alt="The atm." loading="lazy" />
 
 To get the code you need to obtain the 4 cards.
 One card is found directly on the map, the other 3 are found by doing the roulette, candle game and the hacking game.
@@ -342,9 +499,27 @@ To see the number of the joker card you need to put it in the vent TWICE.
 
 To get the order of which you need to put the code in the atm you need to refer to the blackjack table.
 
-<img src="/assets/guide/casino/bankrupt/tables.png" width="721" alt="The blackjack tables." />
-<img src="/assets/guide/casino/bankrupt/table13.png" width="360" />
-<img src="/assets/guide/casino/bankrupt/table24.png" width="360" />
+<Image
+	src="/assets/guide/casino/bankrupt/tables.png"
+	width="721"
+	height="721"
+	alt="The blackjack tables."
+	loading="lazy"
+/>
+<Image
+	src="/assets/guide/casino/bankrupt/table13.png"
+	width="360"
+	height="238"
+	alt="The blackjack table."
+	loading="lazy"
+/>
+<Image
+	src="/assets/guide/casino/bankrupt/table24.png"
+	width="360"
+	height="238"
+	alt="The blackjack table."
+	loading="lazy"
+/>
 
 On the blackjack table, 4 cards are always the same: TEN; JACK; QUEEN; KING. But the suit and symbol change with each game.
 
