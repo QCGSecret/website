@@ -17,10 +17,10 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(astro@4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.2))
       '@astrojs/node':
-        specifier: ^8.2.6
+        specifier: ^8.3.1
         version: 8.3.1(astro@4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.2))
       '@astrojs/react':
-        specifier: ^3.5.0
+        specifier: ^3.6.0
         version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1))
       '@astrojs/tailwind':
         specifier: ^5.1.0
@@ -47,10 +47,10 @@ importers:
         specifier: ^18.3.0
         version: 18.3.0
       astro:
-        specifier: ^4.10.1
+        specifier: ^4.11.0
         version: 4.11.0(@types/node@20.14.2)(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.2)
       astro-compress:
-        specifier: ^2.2.27
+        specifier: ^2.2.28
         version: 2.2.28(@types/node@20.14.2)(typescript@5.5.2)
       astro-critters:
         specifier: ^2.1.10
@@ -117,13 +117,13 @@ importers:
         specifier: ^0.1.62
         version: 0.1.62(eslint@8.57.0)(svelte@3.59.2)(typescript@5.5.2)
       eslint-config-next:
-        specifier: ^14.2.3
+        specifier: ^14.2.4
         version: 14.2.4(eslint@8.57.0)(typescript@5.5.2)
       eslint-config-prettier:
         specifier: 9.1.0
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-astro:
-        specifier: ^1.2.0
+        specifier: ^1.2.2
         version: 1.2.2(eslint@8.57.0)(typescript@5.5.2)
       eslint-plugin-mdx:
         specifier: ^2.3.4
@@ -138,16 +138,16 @@ importers:
         specifier: ^8.0.3
         version: 8.0.3
       lint-staged:
-        specifier: ^15.2.5
+        specifier: ^15.2.7
         version: 15.2.7
       prettier:
-        specifier: ^3.3.1
+        specifier: ^3.3.2
         version: 3.3.2
       prettier-plugin-astro:
         specifier: ^0.14.0
         version: 0.14.0
       typescript:
-        specifier: ^5.4.5
+        specifier: ^5.5.2
         version: 5.5.2
 
 packages:
@@ -2466,17 +2466,9 @@ packages:
       { integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw== }
     engines: { node: '>=14.16' }
 
-  caniuse-lite@1.0.30001559:
+  caniuse-lite@1.0.30001636:
     resolution:
-      { integrity: sha512-cPiMKZgqgkg5LY3/ntGeLFUpi6tzddBNS58A4tnTgQw1zON7u2sZMU7SzOeVH4tj20++9ggL+V6FDOFMTaFFYA== }
-
-  caniuse-lite@1.0.30001574:
-    resolution:
-      { integrity: sha512-BtYEK4r/iHt/txm81KBudCUcTy7t+s9emrIaHqjYurQ10x71zJ5VQ9x1dYPcz/b+pKSp4y/v1xSI67A+LzpNyg== }
-
-  caniuse-lite@1.0.30001591:
-    resolution:
-      { integrity: sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ== }
+      { integrity: sha512-bMg2vmr8XBsbL6Lr0UHXy/21m84FTxDLWn2FSqMd5PrlbMxwJlQnC2YWYxVgp66PZE+BBNF2jYQUBKCo1FDeZg== }
 
   caseless@0.12.0:
     resolution:
@@ -9636,7 +9628,7 @@ snapshots:
   autoprefixer@10.4.16(postcss@8.4.31):
     dependencies:
       browserslist: 4.22.1
-      caniuse-lite: 1.0.30001559
+      caniuse-lite: 1.0.30001636
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -9760,14 +9752,14 @@ snapshots:
 
   browserslist@4.22.1:
     dependencies:
-      caniuse-lite: 1.0.30001574
+      caniuse-lite: 1.0.30001636
       electron-to-chromium: 1.4.621
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001591
+      caniuse-lite: 1.0.30001636
       electron-to-chromium: 1.4.689
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -9811,11 +9803,7 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  caniuse-lite@1.0.30001559: {}
-
-  caniuse-lite@1.0.30001574: {}
-
-  caniuse-lite@1.0.30001591: {}
+  caniuse-lite@1.0.30001636: {}
 
   caseless@0.12.0: {}
 
