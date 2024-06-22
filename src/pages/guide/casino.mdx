@@ -10,6 +10,7 @@ import { Image } from 'astro:assets';
 import Header from '../../components/Header.astro';
 import LaserSolver from '../../components/LaserSolver';
 import Dropdown from '../../components/Dropdown';
+import Gallery from '../../components/Gallery.astro';
 import GuideAlert from '../../components/GuideAlert';
 import { Underline } from '../../components/Formatters';
 import GuideVideo from '../../components/GuideVideo.astro';
@@ -120,24 +121,27 @@ After that you take a coin and drag over all numbers of the first table. While d
 
 {' '}
 
-<Image
-	src="/assets/guide/casino/roulette/whitescreen.png"
-	width="359"
-	height="238"
-	alt="The screen when there's a coin on the wrong number."
-	loading="lazy"
-	alt="The screen when there's a coin on the wrong number."
-/>
-<Image
-	src="/assets/guide/casino/roulette/pinkscreen.png"
-	width="359"
-	height="238"
-	alt="The screen when there's a coin on a correct number."
-	loading="lazy"
-	alt="The screen when there's a coin on a correct number."
-/>
-
-Some numbers will appear as pink instead of white these are good numbers that need to have a coin on them at the first table.<br/> 4 numbers will be good. The coin on 32 need to stay all time on the second table. <br/>
+<Gallery>
+	<Image
+		src="/assets/guide/casino/roulette/whitescreen.png"
+		width="340"
+		height="238"
+		alt="The screen when there's a coin on the wrong number."
+		loading="lazy"
+		alt="The screen when there's a coin on the wrong number."
+	/>
+	<Image
+		src="/assets/guide/casino/roulette/pinkscreen.png"
+		width="340"
+		height="238"
+		alt="The screen when there's a coin on a correct number."
+		loading="lazy"
+		alt="The screen when there's a coin on a correct number."
+	/>
+</Gallery>
+Some numbers will appear as pink instead of white these are good numbers that need to have a coin on them at the first
+table.
+<br /> 4 numbers will be good. The coin on 32 need to stay all time on the second table. <br />
 You need to do this 4 times and the table will switch numbers every time and the timer will also decrease every time.
 
 <Underline>**Bonus time**</Underline> <br />
@@ -441,8 +445,10 @@ This steps gives a 150 seconds time bonus when completed.
 
 To start this step, you must at first shoot the vent in the Slot area thus making a telephone will fall from it. One of the players has to grab it and get close to the red locker and push it onto the locker. This will trigger a hack sequence: The phone attempts to connect to the computer.
 
-<Image src="/assets/guide/casino/hackinggame/vent.png" width="360" height="238" alt="The vent." loading="lazy" />
-<Image src="/assets/guide/casino/hackinggame/phone.png" width="360" height="238" alt="The phone." loading="lazy" />
+<Gallery>
+	<Image src="/assets/guide/casino/hackinggame/vent.png" width="333" height="238" alt="The vent." loading="lazy" />
+	<Image src="/assets/guide/casino/hackinggame/phone.png" width="333" height="238" alt="The phone." loading="lazy" />
+</Gallery>
 <Image src="/assets/guide/casino/hackinggame/locker.png" width="721" height="721" alt="The locker." loading="lazy" />
 
 The other player should be in the control room at the same time. All monitors will start to turn red. The player will have to say go when the title will begin to shift.
@@ -509,14 +515,14 @@ To get the order of which you need to put the code in the atm you need to refer 
 />
 <Image
 	src="/assets/guide/casino/bankrupt/table13.png"
-	width="360"
+	width="721"
 	height="238"
 	alt="The blackjack table."
 	loading="lazy"
 />
 <Image
 	src="/assets/guide/casino/bankrupt/table24.png"
-	width="360"
+	width="721"
 	height="238"
 	alt="The blackjack table."
 	loading="lazy"
