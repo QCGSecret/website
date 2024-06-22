@@ -8,6 +8,7 @@ type Props = MarkdownLayoutProps<{
 	// Define frontmatter props here
 	title: string;
 	map: Maps;
+	id: string;
 }>;
 const { frontmatter } = Astro.props;
 ---
@@ -20,7 +21,7 @@ const { frontmatter } = Astro.props;
 		<title>{frontmatter.title}</title>
 	</head>
 	<div class="flex items-center">
-		<h1 class="mx-auto my-2 text-5xl font-extrabold text-center">{frontmatter.map} Secret Guide</h1>
+		<h1 class="mx-auto my-2 text-5xl font-extrabold text-center" transition:name=`title:${frontmatter.id}`>{frontmatter.map} Secret Guide</h1>
 		<a class="mr-4">
 			<ModeToggle client:load />
 		</a>

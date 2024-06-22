@@ -1,17 +1,18 @@
 ---
 export interface Props {
+	id: string;
 	title: string;
 	body: string;
 	href: string;
 }
 
-const { href, title, body } = Astro.props;
+const { id, href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
 	<a href={href}>
-		<h2>
-			{title}
+		<h2 class="flex items-center gap-2" transition:name=`title:${id}`>
+			<div>{title}</div>
 			<span>&rarr;</span>
 		</h2>
 		<p>
