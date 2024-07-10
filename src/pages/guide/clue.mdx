@@ -11,6 +11,7 @@ import Header from '../../components/Header.astro';
 import Dropdown from '../../components/Dropdown';
 import Gallery from '../../components/Gallery.astro';
 import GuideAlert from '../../components/GuideAlert';
+import LightSolver from '../../components/LightSolver';
 import { Underline } from '../../components/Formatters';
 import GuideVideo from '../../components/GuideVideo.astro';
 import TableOfContent from '../../components/TableOfContent.astro';
@@ -348,6 +349,9 @@ The first orb spawns in front of the door, followed by one in the middle.
 You'll need to turn off the lights first. Afterward, each player must approach a light and use the action key to rotate it. 
 Once all the lamps are turned, the code sequence will be verified. 
 A sparking lamp indicates it's correctly placed; otherwise, adjustments are necessary. This process involves trial and error.
+
+</GuideAlert>
+<LightSolver client:only="react" />
 
 <Header title="Free their souls" id="souls">
 	3 players
