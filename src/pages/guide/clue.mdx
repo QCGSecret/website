@@ -6,150 +6,361 @@ category: Guide
 id: clue
 ---
 
+import { Image } from 'astro:assets';
 import Header from '../../components/Header.astro';
 import Dropdown from '../../components/Dropdown';
+import Gallery from '../../components/Gallery.astro';
 import GuideAlert from '../../components/GuideAlert';
 import { Underline } from '../../components/Formatters';
+import GuideVideo from '../../components/GuideVideo.astro';
+import TableOfContent from '../../components/TableOfContent.astro';
 
-<GuideAlert type="warning" title="WIP">
-	This guide is currently in work in progress.
-</GuideAlert>
+<TableOfContent>
+	<li>
+		<a href="#neptuniaframes">Neptunia's Frames</a>
+	</li>
+	<li>
+		<a href="#ritual">Ritual</a>
+	</li>
+	<li>
+		<a href="#gong">Gong</a>
+	</li>
+	<li>
+		<a href="#doors">Door</a>
+	</li>
+	<li>
+		<a href="#orbs">Orbs</a>
+	</li>
+	<li>
+		<a href="#lights">Lights</a>
+	</li>
+	<li>
+		<a href="#souls">Free their souls</a>
+	</li>
+</TableOfContent>
 
-<Header title="Neptunia Frames" id="frames">
+<Header title="Neptunia's Frames" id="neptuniaframes">
 	2-3 players
 </Header>
 
-For this step, you will need to obtain the 12 Neptunia frames, located at these locations:
+<GuideAlert type="warning" title="Warning">	
+	This step is indispensable for the subsequent phase of the secret. failure to complete it initially will 
+	render the later steps unstartable and unfinishable.
+</GuideAlert>
+
+You must collect the 11 Neptunia frames, which are hidden at the following locations:
 
 <Dropdown title="TV room" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/tv.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/tv.png"
+		width="672"
+		height="672"
+		alt="TV Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Record room" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/record.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/record.png"
+		width="672"
+		height="672"
+		alt="Record Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Bedroom" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/nobitch.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/nobitch.png"
+		width="672"
+		height="672"
+		alt="Bedroom Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Bedroom next to noose" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/nexttonoose.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/nexttonoose.png"
+		width="672"
+		height="672"
+		alt="Noose Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Middle" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/mid.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/mid.png"
+		width="672"
+		height="672"
+		alt="Middle Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Kitchen" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/kitchen.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/kitchen.png"
+		width="672"
+		height="672"
+		alt="Kitchen Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
-<Dropdown title="Garden" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/garden1.png" width="672" />
-	<img src="/assets/guide/clue/frames/frames/garden2.png" width="672" />
+<Dropdown title="Garden (2 Frames)" client:only="react">
+	<Image
+		src="/assets/guide/clue/frames/frames/garden1.png"
+		width="672"
+		height="672"
+		alt="Garden 1 Frame."
+		loading="lazy"
+	/>
+	<Image
+		src="/assets/guide/clue/frames/frames/garden2.png"
+		width="672"
+		height="672"
+		alt="Garden 2 Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Dining room" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/dining.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/dining.png"
+		width="672"
+		height="672"
+		alt="Dinning Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Basement" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/basement.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/basement.png"
+		width="672"
+		height="672"
+		alt="Basement Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
 <Dropdown title="Attic" client:only="react">
-	<img src="/assets/guide/clue/frames/frames/attic.png" width="672" />
+	<Image
+		src="/assets/guide/clue/frames/frames/attic.png"
+		width="672"
+		height="672"
+		alt="Basement Frame."
+		loading="lazy"
+	/>
 </Dropdown>
 
-Once you have them all, bring the frames to the main doors. A clock signal will be emitted, and an orb will appear and enter the weapon's locked container in the middle.
+Once you have gathered all the frames, take them to the main doors. 
+This will trigger a clock signal, causing an orb to appear and enter the weapon's locked container in the center.
 
-<img src="/assets/guide/clue/frames/door.png" width="360" height="238" />
-<img src="/assets/guide/clue/frames/orb.png" width="360" height="238" />
+<Gallery>
+	<Image src="/assets/guide/clue/frames/door.png" width="333" height="238" alt="The main doors.." loading="lazy" />
+	<Image src="/assets/guide/clue/frames/orb.png" width="333" height="238" alt="Average orb." loading="lazy" />
+</Gallery>
 
-<Header title="Sacrificial Ritual" id="ritual">
-	3 players - Only Bystander
+<Header title="Ritual" id="ritual">
+	3 players (Only Bystander)
 </Header>
 
-You will need to get a hidden cross from the television room, located on the locked containers and put it in the puddle that does not have a cross in the rope room.
+<GuideAlert type="warning" title="Warning">		
+	Unlike the later parts of the secret, this step can be completed simultaneously with the Neptunia task!
+</GuideAlert>
 
-<img src="/assets/guide/clue/ritual/defaultcross.png" width="721" />
-<img src="/assets/guide/clue/ritual/pond1.png" width="360" height="238" />
-<img src="/assets/guide/clue/ritual/pond2.png" width="360" height="238" />
-Next, all three must use the rope. Each person will make all the cross burn. Once completed, a completion cue will be
-played and the locked containers will be unlocked and you can find an ammo box inside..
+You need to retrieve a hidden cross from the television room, located on top of the locked containers, and place it in the puddle without a cross in the noose room.
 
-<Header title="Wild West" id="wildwest">
+<Image
+	src="/assets/guide/clue/ritual/defaultcross.png"
+	width="721"
+	height="721"
+	alt="Cross."
+	loading="lazy"
+/>
+
+<Image
+	src="/assets/guide/clue/ritual/pond1"
+	width="360"
+	height="238"
+	alt="Pound."
+	loading="lazy"
+/>
+
+<Image
+	src="/assets/guide/clue/ritual/pond2.png"
+	width="360"
+	height="238"
+	alt="Pound but cooler"
+	loading="lazy"
+/>
+
+After doing so, the three bystanders need to interact with the rope. Each sacrifice will emit a sound and burn the cross.
+Upon completion, a sound cue will play, and the locked containers will unlock, revealing an ammo box inside.
+
+<Header title="Gong" id="gong">
 	4 Sherrifs
 </Header>
 
 Upon completion of each previous step, you will need to get 4 sheriffs ready for each gong.
 
 <Dropdown title="Attic" client:only="react">
-	<img src="/assets/guide/clue/wildwest/gong/gongattic.png" width="672" />
+	<Image
+		src="/assets/guide/clue/wildwest/gong/gongattic.png""
+		width="672"
+		height="672"
+		alt="Attic Gong."
+		loading="lazy"
+	/>
 </Dropdown>
-<Dropdown title="Basement" client:only="react">
-	<img src="/assets/guide/clue/wildwest/gong/gongbasement.png" width="672" />
-</Dropdown>
-<Dropdown title="Middle" client:only="react">
-	<img src="/assets/guide/clue/wildwest/gong/gongmid1.png" width="672" />
-	<img src="/assets/guide/clue/wildwest/gong/gongmid2.png" width="672" />
-</Dropdown>
-They'll need to shoot at the same time their gong. One of them will have to start a countdown to get everybody synced
-up. If everyone shoots at the same time, all gongs will emit a powerful sound and break the glass containers at the
-entrance. Otherwise, it means they fail, so retry.
 
-<Header title="Breaking out" id="breakingout">
+<Dropdown title="Basement" client:only="react">
+	<Image
+		src="/assets/guide/clue/wildwest/gong/gongbasement.png"
+		width="672"
+		height="672"
+		alt="Basement Gong."
+		loading="lazy"
+	/>
+</Dropdown>
+
+<Dropdown title="Middle (2 Gongs)" client:only="react">
+	<Image
+		src="/assets/guide/clue/wildwest/gong/gongmid1.png"
+		width="672"
+		height="672"
+		alt="Mid Gong 1."
+		loading="lazy"
+	/>
+	<Image
+		src="/assets/guide/clue/wildwest/gong/gongmid2.png"
+		width="672"
+		height="672"
+		alt="Mid Gong 2."
+		loading="lazy"
+	/>
+</Dropdown>
+
+They need to shoot their gong simultaneously. One person should initiate a countdown to synchronize everyone. 
+If all gongs are fired at the same time, they will resonate with a powerful sound, shattering the glass containers at the entrance. 
+Failure to synchronize means they must try again.
+
+<Header title="Doors" id="doors">
 	1 player
 </Header>
 
-    A player will have to grab the Gun in the now free by interacting with it, wuth your action key. Once done, go to the
-    TV room to collide it with the ammo box. And hurry to the main gate to throw the weapon on it. The door will shatter
-    and a metal door will close on a weird portal to keep you from leaving.
+A player needs to interact with the now accessible Gun by using the action key.
+Once done, go to the TV room to combine it with the ammo box found inside the previously locked container.
+Quickly proceed to the main gate and throw the weapon at it. The door will shatter, and a metal door will close over a strange portal, preventing your exit.
 
-<Header title="Bell Rush" id="bell">
-	4 player
+<Header title="Orbs" id="orbs">
+	4 players
 </Header>
 
-By shooting the bell in the middle with a gun, orbs will begin to appear, you need to gather them as quickly as possible. Thoses orbs spawn in the same order in every game, so having a player close to the spawn is great!
+By shooting the bell in the center with a gun, orbs will start to appear. It's crucial to gather them swiftly. 
 
-The first orb spawn in front of the door, followed after on who spawn in the middle. The third spawn in front of the TV, in the closet room. After, the 4th one spawn in the attic on the beams, making you do a little some parkour. The fifth is just between the two doors leading to the Maho bedroom. The 6th one in the tunnel just under the piano room. The 7th is directly in front of the switch and the last one is just on a barrel in the basement.
+<GuideAlert type="info" title="Tips">
+	These orbs spawn in the same sequence every game, so positioning a player near their spawn points is advantageous!
+</GuideAlert>
+
+The first orb spawns in front of the door, followed by one in the middle. 
+- The third one spawns in front of the TV in the closet room. 
+- The fourth spawns on the beams in the attic, requiring a bit of parkour. 
+- The fifth is located between the two doors leading to the Maho bedroom. 
+- The sixth is in the tunnel beneath the piano room. 
+- The seventh is directly in front of the light switch, and the last one is on a barrel in the basement.
 
 <Dropdown title="Middle" client:only="react">
-	<img src="/assets/guide/clue/orbs/mid1.png" width="672" />
-	<img src="/assets/guide/clue/orbs/mid2.png" width="672" />
+	<Image
+		src="/assets/guide/clue/orbs/mid1.png"
+		width="672"
+		height="672"
+		alt="Mid orb."
+		loading="lazy"
+	/>
+	<Image
+		src="/assets/guide/clue/orbs/mid2.png"
+		width="672"
+		height="672"
+		alt="Mid Orb but cooler."
+		loading="lazy"
+	/>
 </Dropdown>
+
 <Dropdown title="TV Room" client:only="react">
-	<img src="/assets/guide/clue/orbs/tv.png" width="672" />
+	<Image
+		src="/assets/guide/clue/orbs/tv.png"
+		width="672"
+		height="672"
+		alt="TV orb."
+		loading="lazy"
+	/>
 </Dropdown>
 <Dropdown title="Attic" client:only="react">
-	<img src="/assets/guide/clue/orbs/attic.png" width="672" />
-</Dropdown>
-<Dropdown title="Balcony" client:only="react">
-	<img src="/assets/guide/clue/orbs/balcony.png" width="672" />
-</Dropdown>
-<Dropdown title="Tunnel" client:only="react">
-	<img src="/assets/guide/clue/orbs/tunnel.png" width="672" />
-</Dropdown>
-<Dropdown title="Light" client:only="react">
-	<img src="/assets/guide/clue/orbs/light.png" width="672" />
-</Dropdown>
-<Dropdown title="Basement" client:only="react">
-	<img src="/assets/guide/clue/orbs/basement.png" width="672" />
+	<Image
+		src="/assets/guide/clue/orbs/attic"
+		width="672"
+		height="672"
+		alt="Attic orb."
+		loading="lazy"
+	/>
 </Dropdown>
 
-<Header title="The lights" id="lights">
-	5-11 player
+<Dropdown title="Balcony" client:only="react">
+	<Image
+		src="/assets/guide/clue/orbs/balcony.png"
+		width="672"
+		height="672"
+		alt="Balcony orb."
+		loading="lazy"
+	/>
+</Dropdown>
+
+<Dropdown title="Tunnel" client:only="react">
+	<Image
+		src="/assets/guide/clue/orbs/tunnel.png"
+		width="672"
+		height="672"
+		alt="Tunnel orb."
+		loading="lazy"
+	/>
+</Dropdown>
+
+<Dropdown title="Light" client:only="react">
+	<Image
+		src="/assets/guide/clue/orbs/light.png"
+		width="672"
+		height="672"
+		alt="Light orb."
+		loading="lazy"
+	/>
+</Dropdown>
+
+<Dropdown title="Basement" client:only="react">
+	<Image
+		src="/assets/guide/clue/orbs/basement.png"
+		width="672"
+		height="672"
+		alt="Basement orb."
+		loading="lazy"
+	/>
+</Dropdown>
+
+<Header title="Lights" id="lights">
+	5-11 players
 </Header>
 
-    For the next step, you'll need to close the light, after that, each player wll need to go a a light, by pressing theé
-    action key on it, it will turn it, when all the lamp is turned , the code sequence will be checked, if a lamp sparks,
-    it mean that it's in the good spot, if notyou will need to change it. it's just guessing and testing so. The location
-    :
+You'll need to turn off the lights first. Afterward, each player must approach a light and use the action key to rotate it. 
+Once all the lamps are turned, the code sequence will be verified. 
+A sparking lamp indicates it's correctly placed; otherwise, adjustments are necessary. This process involves trial and error.
 
 <Header title="Free their souls" id="souls">
-	1 player
+	3 players
 </Header>
 
-    To finish the secret, you will need to go on the basement and attic pressure plate and wait for the middle gate to
-    open. Once it's open throw all the neptunia painting in the portal.
+Head to the basement and attic pressure plates and await the opening of the central gate.
+Once it's open, throw all the 11 Neptunia paintings into the portal.
