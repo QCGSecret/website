@@ -15,3 +15,15 @@ Running the development server:
 pnpm install
 pnpm dev
 ```
+
+## Deployment
+
+The production build is ran with [Docker](https://www.docker.com/).
+
+```bash
+docker compose up -d --build --remove-orphans
+```
+
+## Contributing
+
+Contributions are welcome!
