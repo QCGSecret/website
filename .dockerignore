@@ -11,12 +11,8 @@ node_modules/
 !**/src/types
 **/dist
 
-.eslintignore
-.eslintrc.json
 .gitattributes
 .gitignore
-.prettierignore
-.prettierrc.json
 
 gitUpdate.sh
 dc.sh
