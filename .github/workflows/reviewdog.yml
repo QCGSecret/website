@@ -8,8 +8,8 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: mongolyy/reviewdog-action-biome@v1
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+      - uses: mongolyy/reviewdog-action-biome@6b01155716493e5cc365df64aa0946ec9adc53c2 # v1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
