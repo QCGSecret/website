@@ -1,19 +1,20 @@
 ---
-import { ModeToggle } from '@/components/ModeToggle';
-import Layout from '@/layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
+import { ModeToggle } from '@/components/ModeToggle'
+import Layout from '@/layouts/Layout.astro'
 
-export const prerender = true;
+export const prerender = true
 
 export async function getStaticPaths() {
-  const guideEntries = await getCollection('guide');
-  return guideEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
+	const guideEntries = await getCollection('guide')
+	return guideEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}))
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { entry } = Astro.props
+const { Content } = await entry.render()
 ---
 
 <Layout title={entry.data.map + " Secret"}>

@@ -1,4 +1,4 @@
-import { defineCollection, reference, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content'
 
 const guideCollection = defineCollection({
 	type: 'content',
@@ -8,7 +8,7 @@ const guideCollection = defineCollection({
 		authors: z.array(reference('author')),
 		wip: z.boolean().default(false),
 	}),
-});
+})
 
 const authorCollection = defineCollection({
 	type: 'data',
@@ -16,9 +16,9 @@ const authorCollection = defineCollection({
 		name: z.string(),
 		avatar: z.string(),
 	}),
-});
+})
 
 export const collections = {
 	guide: guideCollection,
 	author: authorCollection,
-};
+}

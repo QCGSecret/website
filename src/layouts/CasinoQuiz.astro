@@ -1,14 +1,14 @@
 ---
-import type { MarkdownLayoutProps } from 'astro';
-import type { Maps } from '../util/types.js';
-import Layout from './Layout.astro';
+import type { MarkdownLayoutProps } from 'astro'
+import type { Maps } from '../util/types.js'
+import Layout from './Layout.astro'
 
 type Props = MarkdownLayoutProps<{
 	// Define frontmatter props here
-	title: string;
-	map: Maps;
-}>;
-const { frontmatter } = Astro.props;
+	title: string
+	map: Maps
+}>
+const { frontmatter } = Astro.props
 ---
 
 <Layout title={frontmatter.title}>
