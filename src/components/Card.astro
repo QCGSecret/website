@@ -10,7 +10,7 @@ const { id, href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a href={href} data-astro-prefetch>
 		<h2 class="flex items-center gap-2" transition:name=`title:${id}`>
 			<div>{title}</div>
 			<span>&rarr;</span>

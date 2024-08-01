@@ -8,6 +8,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
+	prefetch: true,
 	integrations: [react(), mdx(), compress(), critters(), tailwind({ applyBaseStyles: false })],
 	output: 'server',
 	adapter: node({
