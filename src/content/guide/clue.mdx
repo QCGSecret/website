@@ -1,20 +1,18 @@
 ---
-layout: '../../layouts/Guide.astro'
-title: Clue Secret
-map: Clue
-category: Guide
 id: clue
+map: Clue
+authors: ['Stormlux']
 ---
 
 import { Image } from 'astro:assets';
-import Header from '../../components/Header.astro';
-import Dropdown from '../../components/Dropdown';
-import Gallery from '../../components/Gallery.astro';
-import GuideAlert from '../../components/GuideAlert';
-import LightSolver from '../../components/LightSolver';
-import { Underline } from '../../components/Formatters';
-import GuideVideo from '../../components/GuideVideo.astro';
-import TableOfContent from '../../components/TableOfContent.astro';
+import Header from '@/components/Header.astro';
+import Dropdown from '@/components/Dropdown';
+import Gallery from '@/components/Gallery.astro';
+import GuideAlert from '@/components/GuideAlert';
+import LightSolver from '@/components/LightSolver';
+import { Underline } from '@/components/Formatters';
+import GuideVideo from '@/components/GuideVideo.astro';
+import TableOfContent from '@/components/TableOfContent.astro';
 
 <TableOfContent>
 	<li>
@@ -47,13 +45,7 @@ import TableOfContent from '../../components/TableOfContent.astro';
 You must collect the 11 Neptunia frames, which are hidden at the following locations:
 
 <Dropdown title="TV room" client:only="react">
-	<Image
-		src="/assets/guide/clue/frames/frames/tv.png"
-		width="672"
-		height="672"
-		alt="TV Frame."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/frames/frames/tv.png" width="672" height="672" alt="TV Frame." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Record room" client:only="react">
@@ -87,13 +79,7 @@ You must collect the 11 Neptunia frames, which are hidden at the following locat
 </Dropdown>
 
 <Dropdown title="Middle" client:only="react">
-	<Image
-		src="/assets/guide/clue/frames/frames/mid.png"
-		width="672"
-		height="672"
-		alt="Middle Frame."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/frames/frames/mid.png" width="672" height="672" alt="Middle Frame." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Kitchen" client:only="react">
@@ -144,16 +130,10 @@ You must collect the 11 Neptunia frames, which are hidden at the following locat
 </Dropdown>
 
 <Dropdown title="Attic" client:only="react">
-	<Image
-		src="/assets/guide/clue/frames/frames/attic.png"
-		width="672"
-		height="672"
-		alt="Attic Frame."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/frames/frames/attic.png" width="672" height="672" alt="Attic Frame." loading="lazy" />
 </Dropdown>
 
-Once you have gathered all the frames, take them to the main doors. 
+Once you have gathered all the frames, take them to the main doors.
 This will trigger a clock signal, causing an orb to appear and enter the weapon's locked container in the center.
 
 <Gallery>
@@ -167,29 +147,11 @@ This will trigger a clock signal, causing an orb to appear and enter the weapon'
 
 You need to retrieve a hidden cross from the television room, located on top of the locked containers, and place it in the puddle without a cross in the noose room.
 
-<Image
-	src="/assets/guide/clue/ritual/defaultcross.png"
-	width="721"
-	height="721"
-	alt="Cross."
-	loading="lazy"
-/>
+<Image src="/assets/guide/clue/ritual/defaultcross.png" width="721" height="721" alt="Cross." loading="lazy" />
 
-<Image
-	src="/assets/guide/clue/ritual/pond1.png"
-	width="360"
-	height="238"
-	alt="Pond."
-	loading="lazy"
-/>
+<Image src="/assets/guide/clue/ritual/pond1.png" width="360" height="238" alt="Pond." loading="lazy" />
 
-<Image
-	src="/assets/guide/clue/ritual/pond2.png"
-	width="360"
-	height="238"
-	alt="Pond 2"
-	loading="lazy"
-/>
+<Image src="/assets/guide/clue/ritual/pond2.png" width="360" height="238" alt="Pond 2" loading="lazy" />
 
 After doing so, the three bystanders need to interact with the rope. Each sacrifice will emit a sound and burn the cross.
 Upon completion, a sound cue will play, and the locked containers will unlock, revealing an ammo box inside.
@@ -237,8 +199,8 @@ Upon completion of each previous step, you will need to get 4 sheriffs ready for
 	/>
 </Dropdown>
 
-They need to shoot their gong simultaneously. One person should initiate a countdown to synchronize everyone. 
-If all gongs are fired at the same time, they will resonate with a powerful sound, shattering the glass containers at the entrance. 
+They need to shoot their gong simultaneously. One person should initiate a countdown to synchronize everyone.
+If all gongs are fired at the same time, they will resonate with a powerful sound, shattering the glass containers at the entrance.
 Failure to synchronize means they must try again.
 
 <Header title="Doors" id="doors">
@@ -253,105 +215,58 @@ Quickly proceed to the main gate and throw the weapon at it. The door will shatt
 	4 players
 </Header>
 
-By shooting the bell in the center with a gun, orbs will start to appear. It's crucial to gather them swiftly. 
+By shooting the bell in the center with a gun, orbs will start to appear. It's crucial to gather them swiftly.
 
 <GuideAlert type="info" title="Tips">
 	These orbs spawn in the same sequence every game, so positioning a player near their spawn points is advantageous!
 </GuideAlert>
 
-The first orb spawns in front of the door, followed by one in the middle. 
-- The third one spawns in front of the TV in the closet room. 
-- The fourth spawns on the beams in the attic, requiring a bit of parkour. 
-- The fifth is located between the two doors leading to the Maho bedroom. 
-- The sixth is in the tunnel beneath the piano room. 
+The first orb spawns in front of the door, followed by one in the middle.
+
+- The third one spawns in front of the TV in the closet room.
+- The fourth spawns on the beams in the attic, requiring a bit of parkour.
+- The fifth is located between the two doors leading to the Maho bedroom.
+- The sixth is in the tunnel beneath the piano room.
 - The seventh is directly in front of the light switch, and the last one is on a barrel in the basement.
 
 <Dropdown title="Middle" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/mid1.png"
-		width="672"
-		height="672"
-		alt="Mid orb."
-		loading="lazy"
-	/>
-	<Image
-		src="/assets/guide/clue/orbs/mid2.png"
-		width="672"
-		height="672"
-		alt="Second Mid Orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/mid1.png" width="672" height="672" alt="Mid orb." loading="lazy" />
+	<Image src="/assets/guide/clue/orbs/mid2.png" width="672" height="672" alt="Second Mid Orb." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="TV Room" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/tv.png"
-		width="672"
-		height="672"
-		alt="TV orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/tv.png" width="672" height="672" alt="TV orb." loading="lazy" />
 </Dropdown>
 <Dropdown title="Attic" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/attic.png"
-		width="672"
-		height="672"
-		alt="Attic orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/attic.png" width="672" height="672" alt="Attic orb." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Balcony" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/balcony.png"
-		width="672"
-		height="672"
-		alt="Balcony orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/balcony.png" width="672" height="672" alt="Balcony orb." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Tunnel" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/tunnel.png"
-		width="672"
-		height="672"
-		alt="Tunnel orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/tunnel.png" width="672" height="672" alt="Tunnel orb." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Light" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/light.png"
-		width="672"
-		height="672"
-		alt="Light orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/light.png" width="672" height="672" alt="Light orb." loading="lazy" />
 </Dropdown>
 
 <Dropdown title="Basement" client:only="react">
-	<Image
-		src="/assets/guide/clue/orbs/basement.png"
-		width="672"
-		height="672"
-		alt="Basement orb."
-		loading="lazy"
-	/>
+	<Image src="/assets/guide/clue/orbs/basement.png" width="672" height="672" alt="Basement orb." loading="lazy" />
 </Dropdown>
 
 <Header title="Lights" id="lights">
 	5-11 players
 </Header>
 
-You'll need to turn off the lights first. Afterward, each player must approach a light and use the action key to rotate it. 
-Once all the lamps are turned, the code sequence will be verified. 
+You'll need to turn off the lights first. Afterward, each player must approach a light and use the action key to rotate it.
+Once all the lamps are turned, the code sequence will be verified.
 A sparking lamp indicates it's correctly placed; otherwise, adjustments are necessary. This process involves trial and error.
 
 <GuideAlert type="info" title="Example">
-<LightSolver client:only="react" />
+	<LightSolver client:only="react" />
 </GuideAlert>
 
 <Header title="Free their souls" id="souls">

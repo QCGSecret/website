@@ -1,0 +1,41 @@
+---
+import { ModeToggle } from '@/components/ModeToggle';
+import Layout from '@/layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const guideEntries = await getCollection('guide');
+  return guideEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.map + " Secret"}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{entry.data.map + " Secret"}</title>
+	</head>
+	<div class="flex items-center">
+		<h1 class="mx-auto my-2 text-5xl font-extrabold text-center" transition:name=`title:${entry.data.id}`>{entry.data.map} Secret Guide</h1>
+		<a class="mr-4">
+			<ModeToggle client:load />
+		</a>
+	</div>
+	<body>
+		<p class="max-w-screen-xl mx-auto text-center">
+			This is a guide on how to do the {entry.data.map} secret on the Québec Games servers
+		</p>
+		<br />
+		<div class="w-40 mx-auto list-inside max-w-[40%]">
+			<Content />
+		</div>
+	</body>
+</Layout>
