@@ -10,8 +10,7 @@
 		"preview": "astro preview",
 		"sync": "astro sync",
 		"astro": "astro",
-		"lint": "pnpm eslint --fix --ext ts,tsx,astro",
-		"format": "pnpm prettier --write . --plugin-search-dir=. .",
+		"check": "pnpm biome check --no-errors-on-unmatched --files-ignore-unknown=true --fix",
 		"prepare": "pnpm husky"
 	},
 	"devDependencies": {
