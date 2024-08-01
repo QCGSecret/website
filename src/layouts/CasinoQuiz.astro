@@ -3,11 +3,13 @@ import type { MarkdownLayoutProps } from 'astro'
 import type { Maps } from '../util/types.js'
 import Layout from './Layout.astro'
 
+// biome-ignore lint/correctness/noUnusedVariables: No astro support in biome
 type Props = MarkdownLayoutProps<{
 	// Define frontmatter props here
 	title: string
 	map: Maps
 }>
+// biome-ignore lint/correctness/noUnusedVariables: No astro support in biome
 const { frontmatter } = Astro.props
 ---
 

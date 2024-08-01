@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props
+// biome-ignore lint/correctness/noUnusedVariables: No astro support in biome
 const { Content } = await entry.render()
 ---
 
